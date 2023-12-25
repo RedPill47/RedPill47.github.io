@@ -2,13 +2,62 @@
 <html>
 <head>
     <title>Page d'Accès aux Examens</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #121212; /* Couleur de fond sombre */
+            color: #E0E0E0; /* Couleur de texte claire */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+        }
+        h1 {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        a {
+            text-decoration: none;
+            color: #BB86FC; /* Couleur de lien violette */
+        }
+        button {
+            background-color: #333333; /* Couleur de fond des boutons */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #E0E0E0; /* Couleur de texte claire */
+            border-radius: 8px; /* Bords arrondis pour les boutons */
+        }
+        button:hover {
+            background-color: #434343; /* Couleur de fond des boutons au survol */
+        }
+        .button-container a:not(:last-child) {
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur la page d'accès aux examens</h1>
-    <p>Cliquez sur les boutons ci-dessous pour accéder aux examens résolus des années précédentes.</p>
+    <div class="container">
+        <h1>Bienvenue sur la page d'accès aux examens</h1>
+        <p>Cliquez sur les boutons ci-dessous pour accéder aux examens résolus des années précédentes.</p>
 
-    <a href="exam-2021-solved/exam-2021.html"><button>Examen 2021 Résolu</button></a>
-
-    <a href="exam-2022-solved/exam-2022.html"><button>Examen 2022 Résolu</button></a>
+        <div class="button-container">
+            <a href="exam-2021-solved/exam-2021.html"><button>Examen 2021 Résolu</button></a>
+            <a href="exam-2022-solved/exam-2022.html"><button>Examen 2022 Résolu</button></a>
+        </div>
+    </div>
 </body>
 </html>
